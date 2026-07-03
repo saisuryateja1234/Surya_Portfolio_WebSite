@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Addaganti Sai Surya Teja — DevOps / SRE Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#top" class="brand">surya<span>@</span>devops</a>
+    <nav aria-label="Section navigation">
+      <a href="#pipeline">How I Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="status-pill" role="status">
+      <span class="dot" aria-hidden="true"></span> OPERATIONAL
+    </div>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">// devops &amp; site reliability engineering</div>
+    <h1>Addaganti Sai Surya Teja</h1>
+    <div class="role">DevOps / SRE Engineer — building infrastructure that stays up</div>
+    <p class="lede">
+      I design and run production AWS infrastructure that ships fast without breaking things.
+      Three years spent turning slow, manual releases into automated, observable, zero-downtime
+      pipelines — the kind of work that's invisible until it isn't there.
+    </p>
+
+    <div class="hero-meta">
+      <span>📍 Chennai, India</span>
+      <a href="mailto:suryatej93987@gmail.com">suryatej93987@gmail.com</a>
+      <a href="tel:+919160093946">+91 9160093946</a>
+      <a href="https://linkedin.com/in/surya-devops-engineer" target="_blank" rel="noopener">linkedin.com/in/surya-devops-engineer</a>
+      <a href="https://github.com/saisuryateja1234" target="_blank" rel="noopener">github.com/saisuryateja1234</a>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:suryatej93987@gmail.com">Get in touch</a>
+      <a class="btn btn-ghost" href="#experience">See the work</a>
+      <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+    </div>
+
+    <div class="uptime-card">
+      <div>
+        <div class="uptime-label">Career uptime</div>
+        <div class="uptime-value" id="uptime-readout">calculating…</div>
+        <div class="uptime-sub">since Dedalus deployment · Jan 2023</div>
+      </div>
+      <div>
+        <div class="uptime-label">Availability achieved in prod</div>
+        <div class="uptime-value" style="color:var(--blue)">99.9%</div>
+        <div class="uptime-sub">EKS microservices, HPA + load balancing</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="pipeline-section" id="pipeline">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-title">This is how a release moves through my pipelines</div>
+      <div class="section-sub">Every stage is automated, gated, and monitored — nothing ships on hope.</div>
+    </div>
+    <div class="pipeline" id="pipeline-track">
+      <div class="pipeline-track" id="pipeline-fill"></div>
+      <div class="stage" data-stage="0"><div class="stage-node"></div><div class="stage-label">Commit</div></div>
+      <div class="stage" data-stage="1"><div class="stage-node"></div><div class="stage-label">Build</div></div>
+      <div class="stage" data-stage="2"><div class="stage-node"></div><div class="stage-label">Test</div></div>
+      <div class="stage" data-stage="3"><div class="stage-node"></div><div class="stage-label">Scan</div></div>
+      <div class="stage" data-stage="4"><div class="stage-node"></div><div class="stage-label">Deploy</div></div>
+      <div class="stage" data-stage="5"><div class="stage-node"></div><div class="stage-label">Monitor</div></div>
+    </div>
+
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-value green">30%</div>
+        <div class="metric-label">faster release cycles via Jenkins + GitHub Actions CI/CD automation</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value blue">40%</div>
+        <div class="metric-label">lower mean time to detect, from custom Prometheus/Grafana alerting</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value amber">35%</div>
+        <div class="metric-label">fewer critical vulnerabilities after SonarQube, Trivy &amp; OWASP gates</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value green">50%</div>
+        <div class="metric-label">less manual toil after Ansible playbook automation across fleets</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="exp-section" id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-title">Experience</div>
+      <div class="section-sub">One role, going deep.</div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div>
+          <div class="exp-role">DevOps Engineer</div>
+          <div class="exp-org">Dedalus · Hybrid</div>
+        </div>
+        <div class="exp-time">2023 — Present</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-groups">
+          <div class="exp-group">
+            <h4>Pipelines &amp; delivery</h4>
+            <ul>
+              <li>Architected end-to-end CI/CD with <b>Jenkins, Git, and Maven</b>, cutting release cycle time by 30% across dev, staging, and prod.</li>
+              <li>Engineered <b>blue-green and canary</b> deployments on Kubernetes/EKS for zero-downtime upgrades and feature rollouts.</li>
+              <li>Enforced <b>GitFlow</b> branching across multi-team workflows, streamlining reviews and release coordination.</li>
+            </ul>
+          </div>
+          <div class="exp-group">
+            <h4>Infrastructure &amp; reliability</h4>
+            <ul>
+              <li>Provisioned AWS infrastructure with <b>Terraform</b>, eliminating environment drift across every SDLC stage.</li>
+              <li>Ran <b>EKS clusters</b> for microservices with ReplicaSets, HPA, and load balancing — 99.9% availability.</li>
+              <li>Led containerization with <b>Docker</b>, standardizing environments and speeding up onboarding.</li>
+            </ul>
+          </div>
+          <div class="exp-group">
+            <h4>Observability</h4>
+            <ul>
+              <li>Built a <b>Prometheus + Grafana</b> observability stack with custom dashboards and alert rules.</li>
+              <li>Cut mean time to detect incidents by <b>40%</b> through proactive resource-usage tuning.</li>
+              <li>Owned <b>SLOs/SLAs</b> for production services, using error budgets to balance velocity and reliability.</li>
+            </ul>
+          </div>
+          <div class="exp-group">
+            <h4>Security &amp; operations</h4>
+            <ul>
+              <li>Integrated <b>SonarQube, Trivy, and OWASP</b> scanning as commit and build-stage security gates.</li>
+              <li>Automated configuration with <b>Ansible</b>, reducing manual operational toil by ~50%.</li>
+              <li>Managed core AWS services — EC2, S3, VPC, IAM, RDS, ELB, ASG, SNS, CloudWatch.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-title">Stack</div>
+      <div class="section-sub">Tools I reach for, grouped by what they're for.</div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-tile"><h4>Cloud — AWS</h4><p>EC2, S3, VPC, IAM, RDS, ELB, ASG, SNS, CloudWatch, EKS, CodePipeline</p></div>
+      <div class="skill-tile"><h4>CI/CD</h4><p>Jenkins, GitHub Actions, AWS CodePipeline, Git-based pipeline automation</p></div>
+      <div class="skill-tile"><h4>Containers &amp; orchestration</h4><p>Docker, Kubernetes (EKS, Pods, Deployments, HPA, Services, Ingress), Helm</p></div>
+      <div class="skill-tile"><h4>Infrastructure as code</h4><p>Terraform, AWS CloudFormation</p></div>
+      <div class="skill-tile"><h4>Config management</h4><p>Ansible playbooks and fleet automation</p></div>
+      <div class="skill-tile"><h4>Monitoring &amp; observability</h4><p>Prometheus, Grafana, Datadog, AWS CloudWatch</p></div>
+      <div class="skill-tile"><h4>DevSecOps</h4><p>SonarQube, Trivy, OWASP Dependency Check, SAST, container security</p></div>
+      <div class="skill-tile"><h4>Scripting</h4><p>Bash, Python (boto3, automation scripts)</p></div>
+      <div class="skill-tile"><h4>Source control</h4><p>Git, GitHub, BitBucket — GitFlow branching strategy</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dual-section">
+  <div class="wrap dual-grid">
+    <div class="info-card">
+      <h4>Education</h4>
+      <div class="info-item">
+        <div class="info-title">B.E., Computer Science</div>
+        <div class="info-sub">Saveetha School of Engineering, Chennai · 2019 – 2023</div>
+      </div>
+    </div>
+    <div class="info-card">
+      <h4>Certifications &amp; achievements</h4>
+      <div class="info-item">
+        <div class="info-title">AWS Certified — DevOps Engineer / Solutions Architect</div>
+        <div class="info-sub">Amazon Web Services</div>
+      </div>
+      <div class="info-item">
+        <div class="info-title">DevOps Certification, Dedalus (Internal)</div>
+        <div class="info-sub">2023</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="wrap">
+    <h2>Let's talk infrastructure.</h2>
+    <p>Open to DevOps and SRE roles where reliability and release speed both matter. Reach out directly — I reply fast.</p>
+    <div class="contact-row">
+      <a class="btn btn-primary" href="mailto:suryatej93987@gmail.com">Email me</a>
+      <button class="btn btn-ghost" id="copy-btn" type="button">Copy email</button>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/surya-devops-engineer" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/saisuryateja1234" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="copied-toast" id="copied-toast">Copied suryatej93987@gmail.com to clipboard</div>
+  </div>
+</section>
+
+<footer>
+  Addaganti Sai Surya Teja · Chennai, India · Built for the recruiters who read this far.
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
