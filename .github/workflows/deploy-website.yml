@@ -1,12 +1,10 @@
 name: Deploy Portfolio Website
-
 on:
   push:
     branches:
       - main
     paths:
       - "website/**"
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
